@@ -1,0 +1,265 @@
+{
+  "title": "Hero",
+  "sections": [
+    {
+      "title": "Class",
+      "fields": [
+        {
+          "title": "Class",
+          "text": "{{data.class.name}}",
+          "type": "form",
+          "attribute": "data.class",
+          "attributeType": "Class",
+          "custom": {
+            "map": {
+              "name": "name",
+              "description": "descr",
+              "features": "data.features"
+            },
+          },
+          "form": {
+            "title": "Class",
+            "sections": [
+              {
+                "title": "Name",
+                "fields": [
+                  {
+                    "placeholder": "Class",
+                    "attribute": "name"
+                  }
+                ]
+              },
+              {
+                "title": "Description",
+                "fields": [
+                  {
+                    "title": "Text",
+                    "type": "textArea",
+                    "attribute": "description"
+                  }
+                ]
+              },
+              {
+                "title": "Class Features",
+                "type": "list",
+                "attribute": "features",
+                "form": {
+                  "title": "Feature",
+                  "sections": [
+                    {
+                      "title": "Common.Name",
+                      "fields": [
+                        {
+                          "placeholder": "Name",
+                          "attribute": "name"
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Common.Description",
+                      "fields": [
+                        {
+                          "title": "Common.Description",
+                          "type": "textArea",
+                          "attribute": "text",
+                          "custom": {
+                            "lines": 10
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "title": "Reference",
+                "type": "group",
+                "fields": [
+                  {
+                    "title": "Reference",
+                    "type": "reference",
+                    "attribute": "reference",
+                    "attributeType": "Item"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+
+    {
+      "title": "Abilities",
+      "type": "group",
+      "fields": [
+        {
+          "title": "Strength",
+          "type": "number",
+          "attribute": "data.strength"
+        },
+        {
+          "title": "Agility",
+          "type": "number",
+          "attribute": "data.agility"
+        },
+        {
+          "title": "Presence",
+          "type": "number",
+          "attribute": "data.presence"
+        },
+        {
+          "title": "Toughness",
+          "type": "number",
+          "attribute": "data.toughness"
+        },
+        {
+          "title": "Spirit",
+          "type": "number",
+          "attribute": "data.spirit"
+        }
+      ]
+    },
+    {
+      "title": "Health",
+      "type": "group",
+      "fields": [
+        {
+          "title": "Current HP",
+          "type": "number",
+          "attribute": "data.hpCurrent"
+        },
+        {
+          "title": "Maximum HP",
+          "type": "number",
+          "attribute": "data.hpMaximum"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "fields": [
+        {
+          "title": "Devil's Luck",
+          "type": "number",
+          "attribute": "data.devilsLuck"
+        },
+        {
+          "title": "Silver",
+          "type": "number",
+          "attribute": "data.silver"
+        }
+      ]
+    },
+    {
+      "title": "Powers",
+      "type": "list",
+      "attribute": "data.powers",
+      "attributeType": "Power",
+      "custom": {
+        "map": {
+          "type": "data.type",
+          "text": "data.description"
+        },
+      },
+      "form": {
+        "title": "Power",
+        "sections": [
+          {
+            "title": "Common.Name",
+            "fields": [
+              {
+                "placeholder": "Name",
+                "attribute": "name"
+              }
+            ]
+          },
+          {
+            "title": "Common.Description",
+            "fields": [
+              {
+                "title": "Common.Description",
+                "type": "textArea",
+                "attribute": "text",
+              }
+            ]
+          },
+          {
+            "title": "Reference",
+            "type": "group",
+            "fields": [
+              {
+                "title": "Reference",
+                "type": "reference",
+                "attribute": "reference",
+                "attributeType": "Power"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "title": "Equipment",
+      "type": "list",
+      "attribute": "data.items",
+      "attributeType": "Item",
+      "custom": {
+        "map": {
+          "type": "data.type",
+          "text": "data.description"
+        },
+      },
+      "form": {
+        "title": "Item",
+        "sections": [
+          {
+            "title": "Common.Name",
+            "fields": [
+              {
+                "placeholder": "Name",
+                "attribute": "name"
+              }
+            ]
+          },
+          {
+            "title": "Common.Description",
+            "fields": [
+              {
+                "title": "Common.Description",
+                "type": "textArea",
+                "attribute": "text",
+              }
+            ]
+          },
+          {
+            "fields": [
+              {
+                "title": "Quantity",
+                "type": "number",
+                "attribute": "quantity"
+              },
+              {
+                "title": "Equipped",
+                "type": "toggle",
+                "attribute": "equipped"
+              }
+            ]
+          },
+          {
+            "title": "Reference",
+            "type": "group",
+            "fields": [
+              {
+                "title": "Reference",
+                "type": "reference",
+                "attribute": "reference",
+                "attributeType": "Item"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

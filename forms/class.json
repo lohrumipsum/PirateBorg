@@ -1,0 +1,47 @@
+{
+  "title": "Class",
+  "sections": [
+    {
+      "title": "Subtitle",
+      "type": "group",
+      "fields": [
+        {
+          "type": "textArea",
+          "attribute": "data.subtitle"
+        }
+      ]
+    },
+    {
+      "title": "Features",
+      "type": "list",
+      "attribute": "data.features",
+      "form": {
+        "title": "Feature",
+        "sections": [
+          {
+            "title": "Common.Name",
+            "fields": [
+              {
+                "placeholder": "Name",
+                "attribute": "name"
+              }
+            ]
+          },
+          {
+            "title": "Common.Description",
+            "fields": [
+              {
+                "title": "Common.Description",
+                "type": "textArea",
+                "attribute": "text",
+                "custom": {
+                  "lines": 10
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

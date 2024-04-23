@@ -1,0 +1,58 @@
+{
+  "debug": false,
+  "spacing": 8,
+  "padding": [
+    20,
+    20,
+    20,
+    20
+  ],
+  "footer": true,
+  "images": false,
+  "views": [
+    {
+      "type": "hStack",
+      "alignment": "leading",
+      "width": 0,
+      "views": [
+        {
+          "type": "vStack",
+          "alignment": "leading",
+          "views": [
+            {
+              "value": "{{name}}",
+              "style": "title",
+            },
+            {
+              "value": "{{data.type}}{% if data.cost %}, {{data.cost}}s\n\n{% endif %}",
+              "style": "subtitle",
+            },
+          ]
+        },
+        {
+          "type": "image",
+          "value": "{{imagePath}}",
+          "link": "{{imagePath}}",
+          "borderWidth": 5,
+          "borderColor": "#000000",
+          "height": 80
+        },
+      ]
+    },
+    {
+      "type": "divider",
+    },
+    {
+      "type": "text",
+      "value": "{{data.description}}",
+    },
+    {
+      "type": "text",
+      "value": "{{footer}}"
+    }, 
+    {
+      "type": "tags",
+      "attribute": "tags"
+    }
+  ]
+}

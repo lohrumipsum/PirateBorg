@@ -1,0 +1,59 @@
+[
+  {
+    "entity": "Power",
+    "params": [
+      {
+        "attribute": "type",
+        "attributeType": "PowerType",
+        "title": "Power.Type"
+      },
+      {
+        "attribute": "source",
+        "title": "Power.Source",
+        "dynamic": true
+      }
+    ],
+    "group": [
+      {
+        "attribute": "type",
+        "title": "Power.Type"
+      },
+      {
+        "attribute": "name",
+        "title": "Power.Name"
+      }
+    ],
+    "sort": [
+      {
+        "attribute": "name",
+        "title": "Power.Name"
+      }
+    ]
+  },
+  {
+    "entity": "Item",
+    "filter": [
+      {
+        "attribute": "type",
+        "attributeType": "ItemType",
+        "title": "Item.Type"
+      },
+      {
+        "attribute": "source",
+        "title": "Item.Source",
+        "dynamic": true
+      }
+    ],
+    "group": [
+      {
+        "attribute": "type",
+        "attributeType": "ItemType",
+        "title": "Item.Type"
+      },
+      {
+        "attribute": "title",
+        "title": "Item.Name"
+      }
+    ]
+  }
+]

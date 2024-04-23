@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Monster",
+    "label": "monster",
+    "collection": {
+      "label": "monsters"
+    },
+    "loadable": true
+  },
+  {
+    "name": "Class",
+    "label": "class",
+    "collection": {
+      "label": "classes"
+    },
+    "loadable": false
+  },
+  {
+    "name": "Ship",
+    "label": "ship",
+    "collection": {
+      "label": "ships"
+    },
+    "loadable": true
+  },
+  {
+    "name": "Power",
+    "label": "power",
+    "collection": {
+      "label": "powers"
+    },
+    "loadable": false
+  },
+  {
+    "name": "Item",
+    "label": "item",
+    "collection": {
+      "label": "items"
+    },
+    "loadable": false,
+    "role": "neutral"
+  },
+  {
+    "name": "Hero",
+    "label": "hero",
+    "collection": {
+      "label": "heroes"
+    },
+    "loadable": true,
+    "role": "friendly"
+  }
+]

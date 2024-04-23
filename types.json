@@ -1,0 +1,19 @@
+{
+  "MonsterType": {
+    "beast": "MonsterType.Beast",
+    "dragon": "MonsterType.Dragon",
+    "humanoid": "MonsterType.Humanoid",
+    "undead": "MonsterType.Undead"
+  },
+  "PowerType": {
+    "ritual": "PowerType.Ritual",
+    "shanty": "PowerType.Shanty",
+    "other": "PowerType.Other"
+  },
+  "ItemType": {
+    "armor": "ItemType.Armor",
+    "weapon": "ItemType.Weapon",
+    "relic": "ItemType.Relic",
+    "other": "ItemType.Other"
+  }
+}

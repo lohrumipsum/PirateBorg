@@ -1,0 +1,72 @@
+{
+  "debug": false,
+  "spacing": 8,
+  "padding": [
+    20,
+    20,
+    20,
+    20
+  ],
+  "footer": true,
+  "images": false,
+  "views": [
+    {
+      "type": "hStack",
+      "alignment": "leading",
+      "width": 0,
+      "views": [
+        {
+          "type": "vStack",
+          "alignment": "leading",
+          "width": 0,
+          "views": [
+            {
+              "value": "{{name}}",
+              "style": "title",
+            },
+            {
+              "value": "{{data.subtitle}}",
+              "style": "subtitle",
+            },
+          ]
+        },
+        {
+          "type": "image",
+          "value": "{{imagePath}}",
+          "link": "{{imagePath}}",
+          "borderWidth": 5,
+          "borderColor": "#000000",
+          "height": 80
+        },
+      ]
+    },
+    {
+      "type": "divider",
+    },
+    {
+      "type": "text",
+      "value": "**HP** {{data.hp|default: '—'}}   **Morale** {{data.morale|default: '—'}}   {% if data.armor.name and data.armor.value %}**{{data.armor.name}}** {{data.armor.value}}{% endif %}",
+    },
+    {
+      "type": "text",
+      "value": "{% for action in data.actions %}▸**{{action.name}}**  {{action.text}}\n{% endfor %}",
+    },
+    {
+      "type": "text",
+      "value": "{{descr}}",
+    },
+    {
+      "type": "text",
+      "title": "Common.Notes",
+      "value": "{{notes}}",
+    },
+    {
+      "type": "text",
+      "value": "{{footer}}"
+    }, 
+    {
+      "type": "tags",
+      "attribute": "tags"
+    }
+  ]
+}

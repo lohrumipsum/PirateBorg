@@ -1,0 +1,22 @@
+{
+  "title": "Power",
+  "sections": [
+    {
+      "type": "group",
+      "fields": [
+        {
+          "title": "Type",
+          "type": "picker",
+          "attribute": "data.type",
+          "attributeType": "PowerType"
+        },
+        {
+          "title": "Description",
+          "placeholder": "Description",
+          "type": "textArea",
+          "attribute": "data.description"
+        }
+      ]
+    }
+  ]
+}

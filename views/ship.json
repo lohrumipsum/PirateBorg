@@ -1,0 +1,214 @@
+{
+  "debug": false,
+  "spacing": 8,
+  "padding": [
+    20,
+    20,
+    20,
+    20
+  ],
+  "footer": true,
+  "images": false,
+  "views": [
+    {
+      "type": "hStack",
+      "alignment": "leading",
+      "width": 0,
+      "views": [
+        {
+          "type": "vStack",
+          "alignment": "leading",
+          "width": 0,
+          "views": [
+            {
+              "value": "{{name}}",
+              "style": "title",
+            },
+            {
+              "value": "{{data.subtitle}}",
+              "style": "subtitle",
+            },
+          ]
+        },
+        {
+          "type": "image",
+          "value": "{{imagePath}}",
+          "link": "{{imagePath}}",
+          "borderWidth": 5,
+          "borderColor": "#000000",
+          "height": 80
+        },
+      ]
+    },
+    {
+      "type": "divider",
+    },
+    {
+      "type": "hStack",
+      "alignment": "leading",
+      "width": 0,
+      "views": [
+        {
+          "type": "vStack",
+          "alignment": "leading",
+          "width": 0,
+          "views": [
+            {
+              "value": "**HP**",
+              "type": "text",
+              "style": "heading6",
+            },
+            {
+              "value": "{{data.hp}}",
+              "type": "text",
+            },            
+            {
+              "value": "**Skill**",
+              "type": "text",
+              "style": "heading6",
+            },
+            {
+              "value": "{{data.skill}}",
+              "type": "text",
+            },
+            {
+              "value": " ",
+              "type": "text",
+            },
+            {
+              "value": " ",
+              "type": "text",
+            }
+          ]
+        },
+        {
+          "type": "vStack",
+          "width": 0,
+          "alignment": "center",
+          "views": [
+            {
+              "value": "**Hull**",
+              "type": "text",
+              "style": "heading6",
+            },
+            {
+              "value": "{{data.hull}}",
+              "type": "text",
+            },            
+            {
+              "value": "**Broadsides**",
+              "type": "text",
+              "style": "heading6",
+            },
+            {
+              "value": "{{data.broadsides}}",
+              "type": "text",
+            },
+            {
+              "value": "**Crew**",
+              "type": "text",
+              "style": "heading6",
+            },
+            {
+              "value": "{{data.crewMin}}/{{data.crewMax}}",
+              "type": "text",
+            }
+          ]
+        },
+        {
+          "type": "vStack",
+          "alignment": "leading",
+          "width": 0,
+          "views": [
+            {
+              "value": "**Agility**",
+              "type": "text",
+              "style": "heading6",
+            },
+            {
+              "value": "{{data.agility}}",
+              "type": "text",
+            },            
+            {
+              "value": "**Small Arms**",
+              "type": "text",
+              "style": "heading6",
+            },
+            {
+              "value": "{{data.smallArms}}",
+              "type": "text",
+            },
+            {
+              "value": "**Cargo**",
+              "type": "text",
+              "style": "heading6",
+            },
+            {
+              "value": "{{data.cargo}}",
+              "type": "text",
+            }
+          ]
+        },
+        {
+          "type": "vStack",
+          "alignment": "leading",
+          "width": 0,
+          "views": [
+            {
+              "value": "**Speed**",
+              "type": "text",
+              "style": "heading6",
+            },
+            {
+              "value": "{{data.speed}}",
+              "type": "text",
+            },            
+            {
+              "value": "**Ram**",
+              "type": "text",
+              "style": "heading6",
+            },
+            {
+              "value": "{{data.ram}}",
+              "type": "text",
+            },
+            {
+              "value": " ",
+              "type": "text",
+            },
+            {
+              "value": " ",
+              "type": "text",
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "value": "Special:",
+      "style": "heading6",
+    },
+    {
+      "type": "text",
+      "value": "{{data.special|default:'None'}}",
+    },
+    {
+      "type": "text",
+      "value": "{{descr}}",
+    },
+    {
+      "type": "text",
+      "title": "Common.Notes",
+      "value": "{{notes}}",
+    },
+    {
+      "type": "text",
+      "value": "{{footer}}"
+    }, 
+    {
+      "type": "tags",
+      "attribute": "tags"
+    }
+  ]
+}

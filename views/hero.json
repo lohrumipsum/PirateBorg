@@ -1,0 +1,177 @@
+{
+  "debug": false,
+  "spacing": 8,
+  "padding": [
+    20,
+    20,
+    20,
+    20
+  ],
+  "footer": true,
+  "images": false,
+  "views": [
+    {
+      "type": "hStack",
+      "alignment": "leading",
+      "width": 0,
+      "views": [
+        {
+          "type": "image",
+          "value": "{{imagePath}}",
+          "link": "{{imagePath}}",
+          "borderWidth": 5,
+          "borderColor": "#000000",
+          "height": 80
+        },
+        {
+          "type": "vStack",
+          "alignment": "leading",
+          "width": 0,
+          "views": [
+            {
+              "value": "{{name}}",
+              "style": "title",
+            },
+            {
+              "value": "{{data.class.name}}",
+              "style": "subtitle",
+            },
+          ]
+        }
+      ]
+    },
+    {
+      "type": "divider",
+    },
+    {
+      "type": "text",
+      "value": 
+      "**Strength** [{{data.strength|signed|default:'+0'}}](/roll/d20{{data.strength|signed|default:'+0'}})  **Agility** [{{data.agility|signed|default:'+0'}}](/roll/d20{{data.agility|signed|default:'+0'}}) **Presence** [{{data.presence|signed|default:'+0'}}](/roll/d20{{data.presence|signed|default:'+0'}}) **Toughness** [{{data.toughness|signed|default:'+0'}}](/roll/d20{{data.toughness|signed|default:'+0'}}) **Spirit** [{{data.spirit|signed|default:'+0'}}](/roll/d20{{data.spirit|signed|default:'+0'}})",
+    },
+    {
+      "type": "text",
+      "value": "**HP** [{{data.hpCurrent|default: 0}}/{{data.hpMaximum|default: 0}}](health)  **Devil's Luck** {{data.devilsLuck|default:'—'}}",
+    },
+    {
+      "type": "divider",
+    },
+    {
+      "value": "Class",
+      "style": "section",
+      "padding": [6, 0, 6, 0]
+    },
+    {
+      "type": "text",
+      "value": "{{data.class.description}}\n\n{% for feature in data.class.features %}**{{feature.name}}**\n{{feature.text}}\n\n{% endfor %} ",
+    },
+    {
+      "type": "divider",
+    },
+    {
+      "value": "Weapons",
+      "style": "section",
+      "padding": [6, 0, 6, 0]
+    },
+    {
+      "type": "text",
+      "value": "{% for item in data.items %} {% if item.type == 'weapon' and item.equipped == true %} {{item.name}}: {{item.text}}  \n{% endif %}{% endfor %}",
+    },
+    {
+      "type": "divider",
+    },
+    {
+      "value": "Armor",
+      "style": "section",
+      "padding": [6, 0, 6, 0]
+    },
+    {
+      "type": "text",
+      "value": "{% for item in data.items %} {% if item.type == 'armor' and item.equipped == true %} {{item.name}}: {{item.text}}  \n{% endif %}{% endfor %}",
+    },
+    {
+      "type": "divider",
+    },
+    {
+      "value": "Powers",
+      "style": "section",
+      "padding": [6, 0, 6, 0]
+    },
+    {
+      "type": "text",
+      "value": "{% for power in data.powers %}▸**{{power.name}}** ({{power.type}}). {{power.text}}\n{% endfor %}",
+    },
+    {
+      "type": "text",
+      "value": "{% for item in data.items %} {% if item.type == 'relic' and item.equipped == true %}▸**{{item.name}}** ({{item.type}}). {{item.text}}\n{% endif %}{% endfor %}",
+    },
+    {
+      "type": "divider",
+    },
+    {
+      "value": "Other Equipment",
+      "style": "section",
+      "padding": [6, 0, 6, 0]
+    },
+    {
+      "type": "text",
+      "value": "{% for item in data.items %}{% if item.type == 'other' %}▸**{{item.name}}** ({{item.quantity|default:'1'}}).  {{item.text}}\n{% endif %} {% endfor %}",
+    },
+    {
+      "type": "divider",
+    },
+    {
+      "type": "text",
+      "value": "**Silver** {{data.silver|default:'0'}}",
+    },
+    {
+      "type": "divider",
+    },
+    {
+      "value": "Description",
+      "style": "section",
+      "padding": [6, 0, 6, 0]
+    },
+    {
+      "type": "text",
+      "value": "{{descr}}",
+    },
+    {
+      "type": "text",
+      "title": "Common.Notes",
+      "value": "{{notes}}",
+    },
+    {
+      "type": "text",
+      "value": "{{footer}}"
+    }, 
+    {
+      "type": "tags",
+      "attribute": "tags"
+    }
+  ],
+  "background": {
+    "type": "zStack",
+    "views": [
+      {
+        "type": "vStack",
+        "views": [
+          {
+            "type": "image",
+            "value": "/images/top.jpg",
+            "imageResizeMode": "tile",
+            "height": 60,
+          },
+          {
+            "type": "spacer",
+          },
+          {
+            "type": "image",
+            "value": "/images/paper-bottom.png",
+            "imageResizeMode": "tile",
+            "height": 400,
+          }
+        ]
+      }
+    ]
+  }
+}

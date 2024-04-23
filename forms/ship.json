@@ -1,0 +1,82 @@
+{
+  "title": "Monster",
+  "entity": "Monster",
+  "sections": [
+    {
+      "title": "Subtitle",
+      "type": "group",
+      "fields": [
+        {
+          "type": "textArea",
+          "attribute": "data.subtitle"
+        }
+      ]
+    },
+    {
+      "title": "Stats",
+      "type": "group",
+      "fields": [
+        {
+          "title": "Hit Points",
+          "type": "number",
+          "attribute": "data.hp"
+        },
+        {
+          "title": "Hull",
+          "type": "text",
+          "attribute": "data.hull"
+        },
+        {
+          "title": "Agility",
+          "type": "text",
+          "attribute": "data.agility"
+        },
+        {
+          "title": "Speed",
+          "type": "number",
+          "attribute": "data.speed"
+        },
+        {
+          "title": "Skill",
+          "type": "text",
+          "attribute": "data.skill"
+        },
+        {
+          "title": "Broadsides",
+          "type": "text",
+          "attribute": "data.broadsides"
+        },
+        {
+          "title": "Small Arms",
+          "type": "text",
+          "attribute": "data.smallArms"
+        },
+        {
+          "title": "Ram",
+          "type": "text",
+          "attribute": "data.ram"
+        },
+        {
+          "title": "Crew (minimum)",
+          "type": "number",
+          "attribute": "data.crewMin"
+        },
+        {
+          "title": "Crew (maximum)",
+          "type": "number",
+          "attribute": "data.crewMax"
+        },
+        {
+          "title": "Cargo",
+          "type": "number",
+          "attribute": "data.cargo"
+        },
+        {
+          "title": "Special",
+          "type": "textArea",
+          "attribute": "data.special"
+        }
+      ]
+    }
+  ]
+}

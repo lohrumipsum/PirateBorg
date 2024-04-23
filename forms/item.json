@@ -1,0 +1,28 @@
+{
+  "title": "Item",
+  "sections": [
+    {
+      "type": "group",
+      "fields": [
+        {
+          "title": "Type",
+          "type": "picker",
+          "attribute": "data.type",
+          "attributeType": "ItemType"
+        },
+        {
+          "title": "Description",
+          "placeholder": "Description",
+          "type": "textArea",
+          "attribute": "data.description"
+        },
+        {
+          "title": "Cost",
+          "placeholder": "Silver",
+          "type": "number",
+          "attribute": "data.cost"
+        }
+      ]
+    }
+  ]
+}
