@@ -48,5 +48,12 @@
     },
     "loadable": true,
     "role": "friendly"
+  },
+  {
+    "name": "Table",
+    "label": "table",
+    "collection": {
+      "label": "tables"
+  }
   }
 ]
