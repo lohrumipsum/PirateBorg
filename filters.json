@@ -1,59 +1,81 @@
-[
-  {
-    "entity": "Power",
+{ 
+  "Power": {
     "params": [
       {
-        "attribute": "type",
+        "attribute": "data.type",
         "attributeType": "PowerType",
-        "title": "Power.Type"
+        "title": "Type"
       },
       {
         "attribute": "source",
-        "title": "Power.Source",
+        "title": "Source",
         "dynamic": true
       }
     ],
     "group": [
       {
-        "attribute": "type",
-        "title": "Power.Type"
+        "attribute": "data.type",
+        "attributeType": "PowerType",
+        "title": "Type"
+      },
+      {
+        "attribute": "source",
+        "title": "Source"
       },
       {
         "attribute": "name",
-        "title": "Power.Name"
+        "title": "Name"
       }
     ],
     "sort": [
       {
         "attribute": "name",
-        "title": "Power.Name"
+        "title": "Name"
+      },
+      {
+        "attribute": "data.type",
+        "title": "Type"
       }
     ]
   },
-  {
-    "entity": "Item",
-    "filter": [
+  "Item": {
+    "params": [
       {
-        "attribute": "type",
+        "attribute": "data.type",
         "attributeType": "ItemType",
-        "title": "Item.Type"
+        "title": "Type"
       },
       {
         "attribute": "source",
-        "title": "Item.Source",
+        "title": "Source",
         "dynamic": true
       }
     ],
     "group": [
       {
-        "attribute": "type",
+        "attribute": "data.type",
         "attributeType": "ItemType",
-        "title": "Item.Type"
+        "title": "Type"
       },
       {
-        "attribute": "title",
-        "title": "Item.Name"
+        "attribute": "name",
+        "title": "Name"
+      }
+    ]
+  },
+  "Table": {
+    "params": [
+      {
+        "attribute": "source",
+        "title": "Source",
+        "dynamic": true
+      }
+    ],
+    "group": [
+      {
+        "attribute": "source",
+        "title": "Source"
       }
     ]
   }
-]
+}
