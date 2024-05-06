@@ -9,12 +9,6 @@
           "type": "picker",
           "attribute": "data.type",
           "attributeType": "PowerType"
-        },
-        {
-          "title": "Description",
-          "placeholder": "Description",
-          "type": "textArea",
-          "attribute": "data.description"
         }
       ]
     }

@@ -27,19 +27,6 @@
               }
             ]
           },
-          {
-            "title": "Common.Description",
-            "fields": [
-              {
-                "title": "Common.Description",
-                "type": "textArea",
-                "attribute": "text",
-                "custom": {
-                  "lines": 10
-                }
-              }
-            ]
-          }
         ]
       }
     }

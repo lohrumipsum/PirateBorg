@@ -35,7 +35,7 @@
                   {
                     "title": "Text",
                     "type": "textArea",
-                    "attribute": "description"
+                    "attribute": "descr"
                   }
                 ]
               },
@@ -47,7 +47,7 @@
                   "title": "Feature",
                   "sections": [
                     {
-                      "title": "Common.Name",
+                      "title": "Name",
                       "fields": [
                         {
                           "placeholder": "Name",
@@ -56,10 +56,10 @@
                       ]
                     },
                     {
-                      "title": "Common.Description",
+                      "title": "Description",
                       "fields": [
                         {
-                          "title": "Common.Description",
+                          "title": "Description",
                           "type": "textArea",
                           "attribute": "text",
                           "custom": {
@@ -159,7 +159,7 @@
       "custom": {
         "map": {
           "type": "data.type",
-          "text": "data.description"
+          "text": "descr"
         },
       },
       "form": {
@@ -175,10 +175,10 @@
             ]
           },
           {
-            "title": "Common.Description",
+            "title": "Description",
             "fields": [
               {
-                "title": "Common.Description",
+                "title": "Description",
                 "type": "textArea",
                 "attribute": "text",
               }
@@ -207,14 +207,14 @@
       "custom": {
         "map": {
           "type": "data.type",
-          "text": "data.description"
+          "text": "descr"
         },
       },
       "form": {
         "title": "Item",
         "sections": [
           {
-            "title": "Common.Name",
+            "title": "Name",
             "fields": [
               {
                 "placeholder": "Name",
@@ -223,10 +223,10 @@
             ]
           },
           {
-            "title": "Common.Description",
+            "title": "Description",
             "fields": [
               {
-                "title": "Common.Description",
+                "title": "Description",
                 "type": "textArea",
                 "attribute": "text",
               }

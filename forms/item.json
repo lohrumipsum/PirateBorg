@@ -11,12 +11,6 @@
           "attributeType": "ItemType"
         },
         {
-          "title": "Description",
-          "placeholder": "Description",
-          "type": "textArea",
-          "attribute": "data.description"
-        },
-        {
           "title": "Cost",
           "placeholder": "Silver",
           "type": "number",
