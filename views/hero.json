@@ -44,19 +44,59 @@
       "type": "divider",
     },
     {
-      "type": "text",
-      "value": 
-      "**Strength** [{{data.strength|signed|default:'+0'}}](/roll/d20{{data.strength|signed|default:'+0'}})  **Agility** [{{data.agility|signed|default:'+0'}}](/roll/d20{{data.agility|signed|default:'+0'}}) **Presence** [{{data.presence|signed|default:'+0'}}](/roll/d20{{data.presence|signed|default:'+0'}}) **Toughness** [{{data.toughness|signed|default:'+0'}}](/roll/d20{{data.toughness|signed|default:'+0'}}) **Spirit** [{{data.spirit|signed|default:'+0'}}](/roll/d20{{data.spirit|signed|default:'+0'}})",
-    },
-    {
-      "type": "text",
-      "value": "**HP** [{{data.hpCurrent|default: 0}}/{{data.hpMaximum|default: 0}}](health)  **Devil's Luck** {{data.devilsLuck|default:'—'}}",
-    },
+      "type": "hStack",
+      "alignment": "leading",
+      "width": 0,
+      "views": [
+        {
+          "type": "vStack",
+          "alignment": "leading",
+          "width": 0,
+          "views": [
+            {
+              "type": "text",
+              "value": "**Strength** [{{data.strength|signed|default:'+0'}}](/roll/d20{{data.strength|signed|default:'+0'}})",
+            },
+            {
+              "type": "text",
+              "value": "**Agility** [{{data.agility|signed|default:'+0'}}](/roll/d20{{data.agility|signed|default:'+0'}})",
+            },
+            {
+              "type": "text",
+              "value": "**Presence** [{{data.presence|signed|default:'+0'}}](/roll/d20{{data.presence|signed|default:'+0'}})",
+            },
+            {
+              "type": "text",
+              "value": "**Toughness** [{{data.toughness|signed|default:'+0'}}](/roll/d20{{data.toughness|signed|default:'+0'}})",
+            },
+            {
+              "type": "text",
+              "value": "**Spirit** [{{data.spirit|signed|default:'+0'}}](/roll/d20{{data.spirit|signed|default:'+0'}})",
+            },
+          ]
+        },
+     {
+          "type": "vStack",
+          "alignment": "leading",
+          "width": 0,
+          "views": [
+            {
+              "type": "text",
+              "value": "**HP** [{{data.hpCurrent|default: 0}}/{{data.hpMaximum|default: 0}}](health)",
+            },
+            {
+              "type": "text",
+              "value": "**Devil's Luck** {{data.devilsLuck|default:'—'}}",
+            },
+          ]
+        }
+      ]
+    },    
     {
       "type": "divider",
     },
     {
-      "value": "Class",
+      "value": "Class: {{data.class.name}}",
       "style": "section",
       "padding": [6, 0, 6, 0]
     },
@@ -133,12 +173,11 @@
     },
     {
       "type": "text",
-      "value": "{{descr}}",
+      "value": "*{{descr}}*",
     },
     {
       "type": "text",
-      "title": "Common.Notes",
-      "value": "{{notes}}",
+      "value": "Notes: {{notes|default:'-'}}"
     },
     {
       "type": "text",

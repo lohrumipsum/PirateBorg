@@ -53,12 +53,11 @@
     },
     {
       "type": "text",
-      "value": "{{descr}}",
+      "value": "Notes: {{notes|default: '-'}}",
     },
     {
       "type": "text",
-      "title": "Common.Notes",
-      "value": "{{notes}}",
+      "value": "*{{descr}}*",
     },
     {
       "type": "text",

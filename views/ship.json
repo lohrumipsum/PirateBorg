@@ -199,7 +199,7 @@
     },
     {
       "type": "text",
-      "title": "Common.Notes",
+      "title": "Notes",
       "value": "{{notes}}",
     },
     {

@@ -44,7 +44,11 @@
     },
     {
       "type": "text",
-      "value": "{{data.description}}",
+      "value": "{{descr}}",
+    },
+    {
+      "type": "text",
+      "value": "Notes: {{notes|default:'-'}}",
     },
     {
       "type": "text",
